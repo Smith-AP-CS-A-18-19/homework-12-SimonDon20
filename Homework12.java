@@ -11,6 +11,9 @@ public class Homework12 {
 	 * variables. The constructor should create and save an
 	 * ArrayList of RectangularShape values
 	 */
+	 // You forgot to declare arr (-1)
+	ArrayList<RectangularShape> arr;
+
 	public Homework12() {
 			arr = new ArrayList<RectangularShape>();
 	}
@@ -41,7 +44,8 @@ public class Homework12 {
 	 */
 	public int problem2(Point2D p) {
 		int num = 0;
-		for (int i = 0; i < arr.length; i++) {
+		// You had arr.length, not arr.size() (-1)
+		for (int i = 0; i < arr.size(); i++) {
 			if (!arr.get(i).contains(p)) {
 				num++;
 			}
